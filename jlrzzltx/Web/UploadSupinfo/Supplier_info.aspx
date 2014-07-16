@@ -1,27 +1,36 @@
 ﻿<%@ Page Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true"
-    CodeBehind="Add.aspx.cs" Inherits="gzpi.Web.tb_供应商信息.Add1" Title="增加页" %>
+    CodeBehind="Supplier_info.aspx.cs" Inherits="gzpi.Web.tb_供应商信息.Add1" Title="增加页" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     
     <title>jquery.uploadify 上传插件的使用</title>
     <link rel="Stylesheet" href="js/uploadify.css" />
-
+    
+        <link rel="stylesheet" href="css/datepicker.css" />
     <script type="text/javascript" src="js/jquery.min.js"></script>
 
     <script type="text/javascript" src="js/swfobject.js"></script>
 
     <script type="text/javascript" src="js/jquery.uploadify.min.js"></script>
+    
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap-datepicker.js"></script>
+    
+           
+    
 
     <script type="text/javascript">
+
         $(document).ready(function () {
             $("#uploadify").uploadify({
-                "uploader": "js/uploadify.swf",
+                "uploader":"js/uploadify.swf",
                 "script": "Upload.aspx",
                 "cancelImg": "js/cancel.png",
                 "folder": "upload",
                 "queueID": "fileQueue",
                 "auto": false,
                 "multi": true,
+                "wmode" : "transparent" ,
                 //TODO 检测报错，等待后期处理
                 //"checkScript": "upload",
                 'fileDesc': "请选择rar doc pdf文件",
@@ -52,7 +61,21 @@
     </script>
 
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">    
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">   
+    <div id="content-header">
+				<h1>供应商信息</h1>
+				<div class="btn-group">
+					<a title="Manage Files" class="btn btn-large tip-bottom"><i class="icon-file"></i></a>
+					<a title="Manage Users" class="btn btn-large tip-bottom"><i class="icon-pencil"></i></a>
+					<a title="Manage Comments" class="btn btn-large tip-bottom"><i class="icon-trash"></i><span class="label label-important">5</span></a>
+					<a title="Manage Orders" class="btn btn-large tip-bottom"><i class="icon-folder-close"></i></a>
+				</div>
+    </div>
+    <div id="breadcrumb">
+				<a title="Go to Home" class="tip-bottom" href="index.html"><i class="icon-home"></i> 主页</a>
+				<a href="#">仪器设备信息库</a>
+				<a class="current" href="#">供应商信息</a>
+			</div>
     <table style="width: 100%;" cellpadding="2" cellspacing="1" class="border">
         <tr>
             <td class="tdbg">
@@ -133,8 +156,9 @@
 		评估日期
 	：</td>
 	<td height="25" width="*" align="left">
-		<asp:TextBox ID="txt评估日期" runat="server" Width="70px"  onfocus="setday(this)"></asp:TextBox>
-	</td></tr>
+    
+		<asp:TextBox class="datepicker" data-date-format="dd-mm-yyyy" value="12-02-2012" ID="txt评估日期" runat="server" Width="70px"  onfocus="setday(this)"></asp:TextBox>
+        </td></tr>
 	<tr>
 	<td height="25" width="30%" align="right">
 		评估结论
@@ -160,12 +184,11 @@
         </tr>
         <tr>
             <td class="tdbg" align="center" valign="bottom">
-                <asp:Button ID="btnSave" runat="server" Text="保存"
-                    OnClick="btnSave_Click" class="inputbutton" onmouseover="this.className='inputbutton_hover'"
-                    onmouseout="this.className='inputbutton'" href="javascript:$('#uploadify').uploadifyUpload()"> </asp:Button>
-                <asp:Button ID="btnCancle" runat="server" Text="取消"
-                    OnClick="btnCancle_Click" class="inputbutton" onmouseover="this.className='inputbutton_hover'"
-                    onmouseout="this.className='inputbutton'" href="javascript:$('#uploadify').uploadifyClearQueue()"></asp:Button>
+
+                <asp:Button ID="btnSave" runat="server" Text="提交" type="submit" value="Validate"
+                    OnClick="btnSave_Click" class="btn btn-primary" href="javascript:$('#uploadify').uploadifyUpload()"> </asp:Button>
+                <asp:Button ID="btnCancle" runat="server" Text="取消" type="submit" value="Validate"
+                    OnClick="btnCancle_Click" class="btn btn-primary" href="javascript:$('#uploadify').uploadifyClearQueue()"></asp:Button>
             </td>
         </tr>
     </table>

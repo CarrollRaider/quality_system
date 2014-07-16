@@ -4,38 +4,157 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head runat="server">
-    <title>信息管理</title>
-    <link href="/style.css" type="text/css" rel="stylesheet" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+    <link rel="icon" href="/Images/favicon.ico"/>
+
+    <title>院计量认证质量体系管理信息库</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Custom styles for this template -->
+    <link href="/Css/bootstrap.min.css" rel="stylesheet"/>
+    <!-- Custom styles for this template -->
+		<link href="/Css/bootstrap-responsive.min.css" rel="stylesheet" />
+    <!-- Custom styles for this template -->
+    <link href="/css/fullcalendar.css" rel="stylesheet"/>
+    <!-- Custom styles for this template -->
+    <link href="/css/unicorn.main.css" rel="stylesheet"/>
+    <!-- Custom styles for this template -->
+    <link href="/css/unicorn.grey.css" class="skin-color" rel="stylesheet"/>
+    <!-- Custom styles for this template -->
+    <link href="/css/unicorn.main.css" rel="stylesheet"/>
+
+    <!-- Custom styles for this template -->
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+            <script src="/js/excanvas.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+            <script src="/js/jquery.ui.custom.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+            <script src="/js/jquery.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+            <script src="/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+            <script src="/js/jquery.flot.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+            <script src="/js/jquery.flot.resize.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+            <script src="/js/jquery.peity.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+            <script src="/js/fullcalendar.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+            <script src="/js/unicorn.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+            <script src="/js/unicorn.dashboard.js"></script>
+
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
 <body>
     <form id="form1" runat="server">
-    <div align="center">
-        <table cellspacing="0" cellpadding="5" width="700" border="0">
-            <tr>
-                <td bgcolor='<%=Application[Session["Style"].ToString()+"xtable_bgcolor"]%>'>
-                    <table cellspacing="0" bordercolordark='<%=Application[Session["Style"].ToString()+"xtable_bordercolordark"]%>'
-                        bordercolorlight='<%=Application[Session["Style"].ToString()+"xtable_bordercolorlight"]%>'
-                        cellpadding="5" width="100%" border="1">
-                        <tr bgcolor="#e4e4e4">
-                            <td bgcolor='<%=Application[Session["Style"].ToString()+"xtable_titlebgcolor"]%>'
-                                height="22" align="left">
-                                <%=TabTitle%>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td height="22">
+            <div id="header">
+			    <h1><a href="~/dashboard.html">院计量认证质量体系管理信息库</a></h1>
+		    </div>
+        
+		<div id="user-nav" class="navbar navbar-inverse">
+            <ul class="nav btn-group">
+                <li class="btn btn-inverse"><a title="" href="#"><i class="icon icon-user"></i> <span class="text">用户</span></a></li>
+                <li class="btn btn-inverse dropdown" id="menu-messages">
+	                <a href="#" data-toggle="dropdown" data-target="#menu-messages" class="dropdown-toggle">
+		                <i class="icon icon-envelope"></i> 
+		                <span class="text">信息</span> 
+		                <span class="label label-important">2</span> 
+		                <b class="caret"></b>
+	                </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="sAdd" title="" href="#">新信息</a></li>
+                        <li><a class="sInbox" title="" href="#">所有信息</a></li>
+                    </ul>
+                </li>
+                <li class="btn btn-inverse"><a title="" href="#"><i class="icon icon-cog"></i> <span class="text">设置</span></a></li>
+                <li class="btn btn-inverse"><a title="" href="login.html"><i class="icon icon-share-alt"></i> <span class="text">退出</span></a></li>
+            </ul>
+        </div>
+        
+		<div id="sidebar">
+			<a href="#" class="visible-phone"><i class="icon icon-home"></i> 菜单</a>
+			<ul>
+				<li class="active"><a href="/default.aspx"><i class="icon icon-home"></i> <span>主页</span></a></li>
+				<li>
+					<a href="#"><i class="icon  icon-th-list"></i> <span>机构信息</span> </a>
+					<ul>
+					</ul>
+				</li>
+				<li class="submenu">
+					<a href="#"><i class="icon icon-th-list"></i> <span>
+					体系文件库</span> </a>
+					<ul>
+						<li><a href="form-common.html">质量手册</a></li>
+						<li><a href="form-common.html">程序文件</a></li>
+						<li><a href="form-validation.html">作业指导书</a></li>
+						<li><a href="form-validation.html">记录表格</a></li>
+						<li><a href="form-validation.html">文件维护与控制信息</a></li>
+						<li><a href="form-validation.html">依据标准（方法）</a></li>
+						<li><a href="form-validation.html">法规准则</a></li>
+						<li><a href="form-validation.html">基础知识</a></li>
+					</ul>
+				</li>
+				<li class="submenu">
+					<a href="#"><i class="icon icon-th-list"></i> <span>检测项目信息库</span> </a>
+					<ul>
+						<li><a href="form-validation.html">检测产品/类别及检测项目/参数</a></li>
+						<li><a href="form-validation.html">检测项目依据标准（方法）</a></li>
+						<li><a href="form-validation.html">检测项目相关作业指导书</a></li>
+						<li><a href="form-validation.html">检测项目限制范围或说明</a></li>
+						<li><a href="form-validation.html">检测项目授权签字人</a></li>
+						<li><a href="form-validation.html">检测项目配备技术人员</a></li>
+						<li><a href="form-validation.html">检测项目仪器设备配置情况</a></li>
+						<li><a href="form-validation.html">检测项目配备质量监督员</a></li>
+					</ul>
+				</li>
+				<li class="submenu">
+					<a href="#"><i class="icon icon-th-list"></i> <span>仪器设备信息库</span></a>
+					<ul>
+						<li><a href="form-common.html">资产信息管理</a></li>
+						<li><a href="/UploadSupinfo/Supplier_info.aspx">供应商信息</a></li>
+						<li><a href="form-wizard.html">控制管理信息</a></li>
+						<li><a href="form-wizard.html">检定/校准信息</a></li>
+						<li><a href="form-wizard.html">期间核查信息</a></li>
+					</ul>
+				</li>
+				
+				<li>
+					<a href="#"><i class="icon icon-th-list"></i> <span>从业人员信息库</span> </a>
+					<ul>
+					</ul>
+				</li>
+				
+				<li>
+					<a href="#"><i class="icon icon-th-list"></i> <span>管理过程记录库</span> </a>
+					<ul>
+					</ul>
+				</li>
+				
+				<li class="submenu">
+					<a href="#"><i class="icon icon-th-list"></i> <span>体系评价表</span> </a>
+					
+				</li>
+
+			</ul>
+
+
+		
+		</div>
+		<div id="content">
                                 <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
                                 </asp:ContentPlaceHolder>
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-        </table>
-    </div>
+		</div>
     <uc1:copyright ID="copyright1" runat="server" />
     </form>
+    
+
 </body>
 </html>

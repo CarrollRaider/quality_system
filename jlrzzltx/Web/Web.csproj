@@ -72,8 +72,116 @@
   <ItemGroup>
     <Content Include="Controls\checkright.ascx" />
     <Content Include="Controls\copyright.ascx" />
+    <Content Include="Css\bootstrap-responsive.min.css" />
+    <Content Include="Css\bootstrap.min.css" />
+    <Content Include="Css\colorpicker.css" />
+    <Content Include="Css\datepicker.css" />
+    <Content Include="Css\fullcalendar.css" />
+    <Content Include="Css\jquery.gritter.css" />
+    <Content Include="Css\offcanvas.css" />
+    <Content Include="Css\select2.css" />
+    <Content Include="Css\unicorn.blue.css" />
+    <Content Include="Css\unicorn.grey.css" />
+    <Content Include="Css\unicorn.login.css" />
+    <Content Include="Css\unicorn.main.css" />
+    <Content Include="Css\unicorn.red.css" />
+    <Content Include="Css\uniform.css" />
     <Content Include="Global.asax" />
+    <Content Include="Images\favicon.ico" />
     <Content Include="Images\top1.gif" />
+    <Content Include="img\alpha.png" />
+    <Content Include="img\breadcrumb.png" />
+    <Content Include="img\demo\av1.jpg" />
+    <Content Include="img\demo\av2.jpg" />
+    <Content Include="img\demo\av3.jpg" />
+    <Content Include="img\glyphicons-halflings-white.png" />
+    <Content Include="img\glyphicons-halflings.png" />
+    <Content Include="img\gritter-light.png" />
+    <Content Include="img\gritter.png" />
+    <Content Include="img\hue.png" />
+    <Content Include="img\icons\16\book.png" />
+    <Content Include="img\icons\16\cabinet.png" />
+    <Content Include="img\icons\16\calendar.png" />
+    <Content Include="img\icons\16\client.png" />
+    <Content Include="img\icons\16\database.png" />
+    <Content Include="img\icons\16\download.png" />
+    <Content Include="img\icons\16\graph.png" />
+    <Content Include="img\icons\16\home.png" />
+    <Content Include="img\icons\16\lock.png" />
+    <Content Include="img\icons\16\mail.png" />
+    <Content Include="img\icons\16\pdf.png" />
+    <Content Include="img\icons\16\people.png" />
+    <Content Include="img\icons\16\piechart.png" />
+    <Content Include="img\icons\16\search.png" />
+    <Content Include="img\icons\16\shopping-bag.png" />
+    <Content Include="img\icons\16\survey.png" />
+    <Content Include="img\icons\16\tag.png" />
+    <Content Include="img\icons\16\user.png" />
+    <Content Include="img\icons\16\wallet.png" />
+    <Content Include="img\icons\16\web.png" />
+    <Content Include="img\icons\32\book.png" />
+    <Content Include="img\icons\32\cabinet.png" />
+    <Content Include="img\icons\32\calendar.png" />
+    <Content Include="img\icons\32\client.png" />
+    <Content Include="img\icons\32\database.png" />
+    <Content Include="img\icons\32\download.png" />
+    <Content Include="img\icons\32\graph.png" />
+    <Content Include="img\icons\32\home.png" />
+    <Content Include="img\icons\32\lock.png" />
+    <Content Include="img\icons\32\mail.png" />
+    <Content Include="img\icons\32\pdf.png" />
+    <Content Include="img\icons\32\people.png" />
+    <Content Include="img\icons\32\piechart.png" />
+    <Content Include="img\icons\32\search.png" />
+    <Content Include="img\icons\32\shopping-bag.png" />
+    <Content Include="img\icons\32\survey.png" />
+    <Content Include="img\icons\32\tag.png" />
+    <Content Include="img\icons\32\user.png" />
+    <Content Include="img\icons\32\wallet.png" />
+    <Content Include="img\icons\32\web.png" />
+    <Content Include="img\larrow.png" />
+    <Content Include="img\line.png" />
+    <Content Include="img\logo.png" />
+    <Content Include="img\menu-active.png" />
+    <Content Include="img\rarrow.png" />
+    <Content Include="img\saturation.png" />
+    <Content Include="img\select2.png" />
+    <Content Include="img\select2x2.png" />
+    <Content Include="img\spinner.gif" />
+    <Content Include="img\sprite.png" />
+    <Content Include="Js\bootstrap-colorpicker.js" />
+    <Content Include="Js\bootstrap-datepicker.js" />
+    <Content Include="Js\bootstrap.min.js" />
+    <Content Include="Js\excanvas.min.js" />
+    <Content Include="Js\fullcalendar.min.js" />
+    <Content Include="Js\ie-emulation-modes-warning.js" />
+    <Content Include="Js\ie10-viewport-bug-workaround.js" />
+    <Content Include="Js\jquery.dataTables.min.js" />
+    <Content Include="Js\jquery.flot.min.js" />
+    <Content Include="Js\jquery.flot.pie.min.js" />
+    <Content Include="Js\jquery.flot.resize.min.js" />
+    <Content Include="Js\jquery.gritter.min.js" />
+    <Content Include="Js\jquery.min.js" />
+    <Content Include="Js\jquery.min_74e92c4.js" />
+    <Content Include="Js\jquery.peity.min.js" />
+    <Content Include="Js\jquery.ui.custom.js" />
+    <Content Include="Js\jquery.ui.custom_a3d4650c.js" />
+    <Content Include="Js\jquery.uniform.js" />
+    <Content Include="Js\jquery.validate.js" />
+    <Content Include="Js\jquery.wizard.js" />
+    <Content Include="Js\offcanvas.js" />
+    <Content Include="Js\select2.min.js" />
+    <Content Include="Js\unicorn.calendar.js" />
+    <Content Include="Js\unicorn.charts.js" />
+    <Content Include="Js\unicorn.chat.js" />
+    <Content Include="Js\unicorn.dashboard.js" />
+    <Content Include="Js\unicorn.form_common.js" />
+    <Content Include="Js\unicorn.form_validation.js" />
+    <Content Include="Js\unicorn.interface.js" />
+    <Content Include="Js\unicorn.js" />
+    <Content Include="Js\unicorn.login.js" />
+    <Content Include="Js\unicorn.tables.js" />
+    <Content Include="Js\unicorn.wizard.js" />
     <Content Include="tb_attachment\Add.aspx" />
     <Content Include="tb_attachment\List.aspx" />
     <Content Include="tb_attachment\Modify.aspx" />
@@ -89,9 +197,11 @@
     <Content Include="tb_资产信息\List.aspx" />
     <Content Include="tb_资产信息\Modify.aspx" />
     <Content Include="tb_资产信息\Show.aspx" />
-    <Content Include="UploadSupinfo\Add.aspx" />
-    <Content Include="UploadSupinfo\Default.aspx" />
+    <Content Include="UploadSupinfo\Supplier_info.aspx" />
+    <Content Include="UploadSupinfo\css\datepicker.css" />
     <Content Include="UploadSupinfo\DtoAdd.ashx" />
+    <Content Include="UploadSupinfo\JS\bootstrap-datepicker.js" />
+    <Content Include="UploadSupinfo\JS\bootstrap.min.js" />
     <Content Include="UploadSupinfo\JS\cancel.png" />
     <Content Include="UploadSupinfo\JS\jquery.min.js" />
     <Content Include="UploadSupinfo\JS\jquery.uploadify-v2.1.0\Change Log.txt" />
@@ -251,19 +361,12 @@
     <Compile Include="tb_资产信息\Show.aspx.designer.cs">
       <DependentUpon>Show.aspx</DependentUpon>
     </Compile>
-    <Compile Include="UploadSupinfo\Add.aspx.cs">
-      <DependentUpon>Add.aspx</DependentUpon>
+    <Compile Include="UploadSupinfo\Supplier_info.aspx.cs">
+      <DependentUpon>Supplier_info.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="UploadSupinfo\Add.aspx.designer.cs">
-      <DependentUpon>Add.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="UploadSupinfo\Default.aspx.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="UploadSupinfo\Default.aspx.designer.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
+    <Compile Include="UploadSupinfo\Supplier_info.aspx.designer.cs">
+      <DependentUpon>Supplier_info.aspx</DependentUpon>
     </Compile>
     <Compile Include="UploadSupinfo\DtoAdd.ashx.cs">
       <DependentUpon>DtoAdd.ashx</DependentUpon>
@@ -278,7 +381,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Default.aspx" />
-    <Content Include="Style.css" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Controls\CheckRight.ascx.resx">
