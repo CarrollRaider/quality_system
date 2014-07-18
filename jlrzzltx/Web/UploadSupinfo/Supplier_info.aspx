@@ -56,7 +56,8 @@
                         }
                     });
                 }
-            });
+            }
+            );
         });
     </script>
 
@@ -184,7 +185,6 @@
         </tr>
         <tr>
             <td class="tdbg" align="center" valign="bottom">
-
                 <asp:Button ID="btnSave" runat="server" Text="提交" type="submit" value="Validate"
                     OnClick="btnSave_Click" class="btn btn-primary" href="javascript:$('#uploadify').uploadifyUpload()"> </asp:Button>
                 <asp:Button ID="btnCancle" runat="server" Text="取消" type="submit" value="Validate"

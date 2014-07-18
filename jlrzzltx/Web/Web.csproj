@@ -43,11 +43,16 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="LTP.Accounts, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\LTP.Accounts.dll</HintPath>
+    </Reference>
     <Reference Include="Maticsoft.Common, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\Lib\Maticsoft.Common.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Microsoft.Vsa.Vb.CodeDOMProcessor" />
     <Reference Include="Microsoft.Web.UI.WebControls">
       <HintPath>..\Lib\Microsoft.Web.UI.WebControls.dll</HintPath>
       <Private>True</Private>
@@ -55,6 +60,18 @@
     <Reference Include="Microsoft.Web.UI.WebControls">
       <HintPath>..\Lib\LTP.Accounts.dll</HintPath>
       <Private>True</Private>
+    </Reference>
+    <Reference Include="PDFLibNet, Version=1.0.6.6, Culture=neutral, PublicKeyToken=26d87f7d66fb2aee, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\PDFLibNet.dll</HintPath>
+    </Reference>
+    <Reference Include="PDFViewASP, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\PDFViewASP.dll</HintPath>
+    </Reference>
+    <Reference Include="StatefullScrollPanel, Version=1.0.2503.42155, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\StatefullScrollPanel.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -70,6 +87,24 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="bin\gzpi.BLL.dll" />
+    <Content Include="bin\gzpi.BLL.pdb" />
+    <Content Include="bin\gzpi.DAL.dll" />
+    <Content Include="bin\gzpi.DAL.pdb" />
+    <Content Include="bin\gzpi.DBUtility.dll" />
+    <Content Include="bin\gzpi.DBUtility.pdb" />
+    <Content Include="bin\gzpi.Model.dll" />
+    <Content Include="bin\gzpi.Model.pdb" />
+    <Content Include="bin\gzpi.Web.dll" />
+    <Content Include="bin\gzpi.Web.pdb" />
+    <Content Include="bin\LTP.Accounts.dll" />
+    <Content Include="bin\Maticsoft.Common.dll" />
+    <Content Include="bin\Microsoft.Web.UI.WebControls.dll" />
+    <Content Include="bin\MySql.Data.dll" />
+    <Content Include="bin\PDFLibNet.dll" />
+    <Content Include="bin\PDFViewASP.dll" />
+    <Content Include="bin\StatefullScrollPanel.dll" />
+    <Content Include="bin\System.Data.SQLite.dll" />
     <Content Include="Controls\checkright.ascx" />
     <Content Include="Controls\copyright.ascx" />
     <Content Include="Css\bootstrap-responsive.min.css" />
@@ -86,6 +121,55 @@
     <Content Include="Css\unicorn.main.css" />
     <Content Include="Css\unicorn.red.css" />
     <Content Include="Css\uniform.css" />
+    <Content Include="Display\Default.aspx" />
+    <Content Include="Display\images\ActualSize.png" />
+    <Content Include="Display\images\FitToScreen.png" />
+    <Content Include="Display\images\FitToWidth.png" />
+    <Content Include="Display\images\Next_24x24.png" />
+    <Content Include="Display\images\Previous_24x24.png" />
+    <Content Include="Display\images\Redo_24x24.png" />
+    <Content Include="Display\images\SearchNext.png" />
+    <Content Include="Display\images\SearchPrevious.png" />
+    <Content Include="Display\images\Search_24x24.png" />
+    <Content Include="Display\images\Undo_24x24.png" />
+    <Content Include="Display\images\Zoom In_24x24.png" />
+    <Content Include="Display\images\Zoom Out_24x24.png" />
+    <Content Include="Display\lib\PDFLibNet.dll" />
+    <Content Include="Display\lib\StatefullScrollPanel.dll" />
+    <Content Include="Display\PDFViewer.ascx" />
+    <Content Include="Display\PDFViewer.ascx.designer.vb" />
+    <Content Include="Display\PDFViewer.ascx.vb" />
+    <Content Include="Document\~%24体系评价表.htm" />
+    <Content Include="Document\从业人员信息库.files\colorschememapping.xml" />
+    <Content Include="Document\从业人员信息库.files\filelist.xml" />
+    <Content Include="Document\从业人员信息库.htm" />
+    <Content Include="Document\体系评价表.files\colorschememapping.xml" />
+    <Content Include="Document\体系评价表.files\filelist.xml" />
+    <Content Include="Document\体系评价表.htm" />
+    <Content Include="Document\供应商信息.files\colorschememapping.xml" />
+    <Content Include="Document\供应商信息.files\filelist.xml" />
+    <Content Include="Document\供应商信息.htm" />
+    <Content Include="Document\控制管理信息.files\colorschememapping.xml" />
+    <Content Include="Document\控制管理信息.files\filelist.xml" />
+    <Content Include="Document\控制管理信息.htm" />
+    <Content Include="Document\期间核查信息.files\colorschememapping.xml" />
+    <Content Include="Document\期间核查信息.files\filelist.xml" />
+    <Content Include="Document\期间核查信息.htm" />
+    <Content Include="Document\机构信息.files\colorschememapping.xml" />
+    <Content Include="Document\机构信息.files\filelist.xml" />
+    <Content Include="Document\机构信息.htm" />
+    <Content Include="Document\检定或校准信息.files\colorschememapping.xml" />
+    <Content Include="Document\检定或校准信息.files\filelist.xml" />
+    <Content Include="Document\检定或校准信息.htm" />
+    <Content Include="Document\检测项目信息库.files\colorschememapping.xml" />
+    <Content Include="Document\检测项目信息库.files\filelist.xml" />
+    <Content Include="Document\检测项目信息库.htm" />
+    <Content Include="Document\管理过程记录库.files\colorschememapping.xml" />
+    <Content Include="Document\管理过程记录库.files\filelist.xml" />
+    <Content Include="Document\管理过程记录库.htm" />
+    <Content Include="Document\资产信息管理.files\colorschememapping.xml" />
+    <Content Include="Document\资产信息管理.files\filelist.xml" />
+    <Content Include="Document\资产信息管理.htm" />
     <Content Include="Global.asax" />
     <Content Include="Images\favicon.ico" />
     <Content Include="Images\top1.gif" />
@@ -197,6 +281,7 @@
     <Content Include="tb_资产信息\List.aspx" />
     <Content Include="tb_资产信息\Modify.aspx" />
     <Content Include="tb_资产信息\Show.aspx" />
+    <Content Include="UploadSupinfo\Default.aspx" />
     <Content Include="UploadSupinfo\Supplier_info.aspx" />
     <Content Include="UploadSupinfo\css\datepicker.css" />
     <Content Include="UploadSupinfo\DtoAdd.ashx" />
@@ -243,6 +328,13 @@
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Display\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Display\Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
@@ -361,6 +453,13 @@
     <Compile Include="tb_资产信息\Show.aspx.designer.cs">
       <DependentUpon>Show.aspx</DependentUpon>
     </Compile>
+    <Compile Include="UploadSupinfo\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UploadSupinfo\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
     <Compile Include="UploadSupinfo\Supplier_info.aspx.cs">
       <DependentUpon>Supplier_info.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -412,6 +511,100 @@
   <ItemGroup>
     <Folder Include="Admin\" />
     <Folder Include="Components\" />
+    <Folder Include="Display\render\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\gzpi.Web.dll.config" />
+    <Content Include="Display\PDF\2008 IT行业薪资与技能调查报告%28中文版%29.pdf" />
+    <Content Include="Display\PDF\J2.pdf" />
+    <Content Include="Display\PDF\JSP&amp;amp%3b.pdf" />
+    <Content Include="Display\PDF\热效应保护标准原文.pdf" />
+    <Content Include="Display\PDF\软件开发文档范例-概要设计说明书.pdf" />
+    <Content Include="Display\PDF\1质量手册·C·20130918.pdf" />
+    <Content Include="Document\从业人员信息库.files\themedata.thmx" />
+    <Content Include="Document\体系评价表.files\themedata.thmx" />
+    <Content Include="Document\供应商信息.files\themedata.thmx" />
+    <Content Include="Document\控制管理信息.files\themedata.thmx" />
+    <Content Include="Document\期间核查信息.files\themedata.thmx" />
+    <Content Include="Document\机构信息.files\themedata.thmx" />
+    <Content Include="Document\检定或校准信息.files\themedata.thmx" />
+    <Content Include="Document\检测项目信息库.files\themedata.thmx" />
+    <Content Include="Document\管理过程记录库.files\themedata.thmx" />
+    <Content Include="Document\资产信息管理.files\themedata.thmx" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="ACTIVEXLib">
+      <Guid>{EA3E6E3C-5130-49C1-8EDE-F889CD0F4429}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>5</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.PowerPoint">
+      <Guid>{91493440-5A91-11CF-8700-00AA0060263B}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>10</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Word">
+      <Guid>{00020905-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>8</VersionMajor>
+      <VersionMinor>5</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Office">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>99</VersionMajor>
+      <VersionMinor>1</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

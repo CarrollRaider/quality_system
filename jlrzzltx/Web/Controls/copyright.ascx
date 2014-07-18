@@ -5,7 +5,7 @@
 	</tr>
 	<tr>
 		<td height="22"><div align="center">
-				<DIV align="center">Copyright(C) 2004-2008 Maticsoft All Rights Reserved.
+				<DIV align="center">广州市规划院信息办俞昌林
 				</DIV>
 			
 			</div>

@@ -17,7 +17,7 @@ namespace gzpi.Web.tb_供应商信息
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-                       
+
         }
 
         		protected void btnSave_Click(object sender, EventArgs e)
@@ -106,9 +106,11 @@ namespace gzpi.Web.tb_供应商信息
 			model.评估结论=评估结论;
 
 			gzpi.BLL.tb_供应商信息 bll=new gzpi.BLL.tb_供应商信息();
-			bll.Add(model);
-			Maticsoft.Common.MessageBox.ShowAndRedirect(this,"保存成功！","add.aspx");
-
+            bll.Add(model);
+            ClientScript.RegisterStartupScript(Page.GetType(), "", "<script>test()</script> ", true);
+            
+			Maticsoft.Common.MessageBox.ShowAndRedirect(this,"保存成功！","Supplier_info.aspx");
+            
 		}
 
 

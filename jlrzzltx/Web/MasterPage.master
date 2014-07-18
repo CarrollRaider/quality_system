@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head runat="server">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge; charset=UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <meta name="description" content=""/>
     <meta name="author" content=""/>
@@ -56,14 +56,14 @@
 <body>
     <form id="form1" runat="server">
             <div id="header">
-			    <h1><a href="~/dashboard.html">院计量认证质量体系管理信息库</a></h1>
+			    <h1><a href="~">院计量认证质量体系管理信息库</a></h1>
 		    </div>
         
 		<div id="user-nav" class="navbar navbar-inverse">
             <ul class="nav btn-group">
                 <li class="btn btn-inverse"><a title="" href="#"><i class="icon icon-user"></i> <span class="text">用户</span></a></li>
                 <li class="btn btn-inverse dropdown" id="menu-messages">
-	                <a href="#" data-toggle="dropdown" data-target="#menu-messages" class="dropdown-toggle">
+	                <a href="#" class="dropdown-toggle">
 		                <i class="icon icon-envelope"></i> 
 		                <span class="text">信息</span> 
 		                <span class="label label-important">2</span> 
@@ -84,7 +84,7 @@
 			<ul>
 				<li class="active"><a href="/default.aspx"><i class="icon icon-home"></i> <span>主页</span></a></li>
 				<li>
-					<a href="#"><i class="icon  icon-th-list"></i> <span>机构信息</span> </a>
+					<a onserverclick="btn_Onclick_Jgxx" runat="server"><i class="icon  icon-th-list"></i> <span>机构信息</span> </a>
 					<ul>
 					</ul>
 				</li>
@@ -92,54 +92,48 @@
 					<a href="#"><i class="icon icon-th-list"></i> <span>
 					体系文件库</span> </a>
 					<ul>
-						<li><a href="form-common.html">质量手册</a></li>
-						<li><a href="form-common.html">程序文件</a></li>
-						<li><a href="form-validation.html">作业指导书</a></li>
-						<li><a href="form-validation.html">记录表格</a></li>
-						<li><a href="form-validation.html">文件维护与控制信息</a></li>
-						<li><a href="form-validation.html">依据标准（方法）</a></li>
-						<li><a href="form-validation.html">法规准则</a></li>
-						<li><a href="form-validation.html">基础知识</a></li>
+						<li><a href="#">质量手册</a></li>
+						<li><a href="#">程序文件</a></li>
+						<li><a href="#">作业指导书</a></li>
+						<li><a href="#">记录表格</a></li>
+						<li><a href="#">文件维护与控制信息</a></li>
+						<li><a href="#">依据标准（方法）</a></li>
+						<li><a href="#">法规准则</a></li>
+						<li><a href="#">基础知识</a></li>
 					</ul>
 				</li>
-				<li class="submenu">
-					<a href="#"><i class="icon icon-th-list"></i> <span>检测项目信息库</span> </a>
+				<li >
+					<a onserverclick="btn_Onclick_Jcxmxxk" runat="server">
+                        <i class="icon icon-th-list"></i> <span>检测项目信息库</span>
+					</a>
 					<ul>
-						<li><a href="form-validation.html">检测产品/类别及检测项目/参数</a></li>
-						<li><a href="form-validation.html">检测项目依据标准（方法）</a></li>
-						<li><a href="form-validation.html">检测项目相关作业指导书</a></li>
-						<li><a href="form-validation.html">检测项目限制范围或说明</a></li>
-						<li><a href="form-validation.html">检测项目授权签字人</a></li>
-						<li><a href="form-validation.html">检测项目配备技术人员</a></li>
-						<li><a href="form-validation.html">检测项目仪器设备配置情况</a></li>
-						<li><a href="form-validation.html">检测项目配备质量监督员</a></li>
 					</ul>
 				</li>
 				<li class="submenu">
 					<a href="#"><i class="icon icon-th-list"></i> <span>仪器设备信息库</span></a>
 					<ul>
-						<li><a href="form-common.html">资产信息管理</a></li>
-						<li><a href="/UploadSupinfo/Supplier_info.aspx">供应商信息</a></li>
-						<li><a href="form-wizard.html">控制管理信息</a></li>
-						<li><a href="form-wizard.html">检定/校准信息</a></li>
-						<li><a href="form-wizard.html">期间核查信息</a></li>
+						<li><a onserverclick="btn_Onclick_Zcxxgl" runat="server">资产信息管理</a></li>
+						<li><a onserverclick="btn_Onclick_Gysxx" runat="server">供应商信息</a></li>
+						<li><a onserverclick="btn_Onclick_Kzglxx" runat="server">控制管理信息</a></li>
+						<li><a onserverclick="btn_Onclick_Jdjzxx" runat="server">检定/校准信息</a></li>
+						<li><a onserverclick="btn_Onclick_Qjhcxx" runat="server">期间核查信息</a></li>
 					</ul>
 				</li>
 				
 				<li>
-					<a href="#"><i class="icon icon-th-list"></i> <span>从业人员信息库</span> </a>
+					<a onserverclick="btn_Onclick_Cyryxxk" runat="server"><i class="icon icon-th-list"></i> <span>从业人员信息库</span> </a>
 					<ul>
 					</ul>
 				</li>
 				
 				<li>
-					<a href="#"><i class="icon icon-th-list"></i> <span>管理过程记录库</span> </a>
+					<a onserverclick="btn_Onclick_Glgcjlk" runat="server"><i class="icon icon-th-list"></i> <span>管理过程记录库</span> </a>
 					<ul>
 					</ul>
 				</li>
 				
 				<li class="submenu">
-					<a href="#"><i class="icon icon-th-list"></i> <span>体系评价表</span> </a>
+					<a onserverclick="btn_Onclick_Txpjb" runat="server"><i class="icon icon-th-list"></i> <span>体系评价表</span> </a>
 					
 				</li>
 
@@ -148,13 +142,17 @@
 
 		
 		</div>
-		<div id="content">
+		<div id="content" >
+                                    <iframe id="iframe1" runat="server"  style="width:100%" height="700px" visible="false">
+
+                                    </iframe>
+            
                                 <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
                                 </asp:ContentPlaceHolder>
 		</div>
-    <uc1:copyright ID="copyright1" runat="server" />
     </form>
     
+    <uc1:copyright ID="copyright1" runat="server" />
 
 </body>
 </html>

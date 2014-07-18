@@ -80,5 +80,7 @@ namespace gzpi.Web.tb_attachment
         {
             Response.Redirect("list.aspx");
         }
+
     }
+
 }
